@@ -1,0 +1,95 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html{
+background-image: url("https://images4.alphacoders.com/242/242556.png");
+background-size: cover;
+min-height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+color:#333;
+}
+
+#quote-box{
+  background: rgba(255,241,144,0.8);
+  width:50%;
+  margin:auto;
+  margin-top:150px;
+  min-height: 100px;
+  border-radius: 20px;
+  padding: 50px 30px; 
+}
+
+#text, #author{
+  margin-bottom:20px;
+}
+.fadeIn{
+  animation:fadein 1s;
+}
+@keyframes  fadein {
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+#new-quote{
+  background:#c38d5f;
+  color:#fff;
+  font-size:15px;
+  padding: 14px;
+  border:none;
+  outline:none;
+  border-radius:10px;
+  cursor: pointer;
+}
+#tweet-quote{
+  background:#c38d5f;
+  color:#fff;
+  padding:14px;
+  margin-left: 20px;
+  border:1px solid #555555;
+  border:none;
+  border-radius: 10px;
+}
+#new-quote:hover, #tweet-quote:hover{
+  background:#b9540c;
+}
+
+footer{
+  background:#c38d5f;
+  text-align: center;
+  font-style: italic;
+  width:40%;
+  margin:auto;
+  border-radius: 0 0 10px 10px;
+  padding: 5px 5px;
+}
+footer>a{
+  text-decoration: none;
+  color:inherit;
+  font-weight:bold;
+}
+
+
+@media (max-width:849px){
+  #quote-box{
+    width:60%;
+  }
+}
+@media (max-width:400px){
+  #quote-box{
+    width:80%;
+    margin-top:100px;
+  }
+  #tweet-quote{
+    display:block;
+    margin-left:0;
+    margin-top:10px;
+    text-align:center;
+  }
+  #new-quote{
+    display:block;
+    width:100%;
+  }
+}
